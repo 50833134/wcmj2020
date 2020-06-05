@@ -1,128 +1,160 @@
-<h1>網管</h1>
-<h2>W2(3.13)</h2>
-<p>建網站</p>
-<p>此內容管理系統以<span> <a href="https://github.com/mdecourse/cmsimde">https:..github.com.mdecourse.cmsimde</a> </span>作為<span> submodule </span>運作<span>, </span>可以選定對應的版本運作<span>, cmsimde </span>可以持續改版<span>, </span>不會影響之前設為<span> submodule, </span>使用舊版<span> cmsimde </span>模組的內容管理相關運作<span>.</span></p>
-<p>利用<span> cmsimde </span>建立靜態網誌方法<span>:</span></p>
-<ol>
-<li>在<span> github </span>建立倉儲<span>, git clone </span>到近端</li>
-<li>參考<span><a href="https://github.com/mdecourse/newcms">https:..github.com.mdecourse.newcms</a>, </span>加入除了<span> cmsimde </span>目錄外的所有內容</li>
-</ol>
-<p>以<span> git submodule add <a href="https://github.com/mdecourse/cmsimde">https:..github.com.mdecourse.cmsimde</a> cmsimde</span></p>
-<p>建立<span> cmsimde </span>目錄<span>, </span>並從<span> github </span>取下子模組內容<span>.</span></p>
-<p>3.在近端維護時<span>, </span>更換目錄到倉儲中的<span> cmsimde, </span>以<span> python wsgi.py </span>啟動近端網際伺服器<span>.</span></p>
-<p>動態內容編輯完成後<span>, </span>以<span> generate_pages </span>轉為靜態內容<span>, </span>以<span> git add commit </span>及<span> push </span>將內容推到遠端<span>.</span></p>
-<ol start="4">
-<li>之後若要以<span> git clone </span>取下包含<span> submodule </span>的所有內容<span>, </span>執行<span>:</span></li>
-</ol>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https:..github.com.mdecourse.newcms.git</a></p>
-<h2>W3(3.20)</h2>
-<p>筆記</p>
-<p>terminology 專業術語、<span>particular </span>特別、<span>technical </span>技術、<span>application </span>應用、</p>
-<p>software 軟體、<span>hardware </span>硬體、<span>firmwarre </span>韌體、<span>machine language </span>機器語言、</p>
-<p>URL:Uniform Resourse Locator  統一資源定位、<span>command wundow </span>命令視窗、<span>submodule </span>子模組</p>
-<p>程式令<span>:</span></p>
-<p>Y:←指<span>y</span>槽<span> Y:\   ←</span>表示<span>Y</span>槽的<span>root</span>根目錄<span> &gt; </span>為回應符號<span>(prormptsign)  \ </span>為<span>blackslash </span>反斜線<span> dir</span>為顯示目錄內容的指令<span> cd tmp </span>表示<span>change directory </span>到指定的目錄<span> git</span>為分散式版次管理的指令名稱<span> git clone</span>表示要使用<span>git</span>對遠端的倉儲進行<span>clone</span>。</p>
-<h2>W4(3.27)</h2>
-<p>portable 可攜、<span>Assembly </span>執行機器速度快但對硬體的相容性差、<span>objective -c</span></p>
-<p>→開發<span>iphone</span>的前一代程式、<span>compile </span>編譯、<span>interpret </span>解譯、<span>unix</span>電腦系統的一種、<span>shell </span>殼、<span>graphics </span>圖形、<span>device </span>物件、<span>interface </span>介面</p>
-<p>ps.c++ →加入物件功能的<span>C</span></p>
-<h2>W5(4.3)</h2>
-<p>掃墓<span>~~</span>休息</p>
-<h2>W6(4.10)</h2>
-<p>大致講解<span>↓</span>的用法和規格</p>
-<p>portable obs →直播軟體</p>
-<p><a href="http://meet.google.com/">meet.google.com</a>→google 的視訊軟體</p>
-<p> </p>
-<h2>W7(4.17)</h2>
-<p>abunta→遠端操控電腦、<span>asscii </span>美國標準交換資訊碼。<span> </span></p>
-<p>tmp&gt;wcmj2020&gt;init.py   更改網頁標題</p>
-<h2>W8(4.24)</h2>
-<p>網站<span>push</span>的步驟</p>
-<p>1.先把網站切成靜態<span>Home</span></p>
-<p>2.git add空格<span>.   →</span>意思是跟電腦說現在要讀的東西</p>
-<p>3.git comit -m"add w□" →跟電腦說你要讀的東西是什麼</p>
-<p>4.git push →推上動態網頁</p>
-<p>讓我們實作一次分組，弄<span><a href="http://meet.google.com/">meet.google.com</a></span>的實際操作。好讓下次上課可以線上上課。</p>
-<p> </p>
-<h2> W9(5.1)</h2>
-<p></p>
-<div id="tipue_search_content">
-<h1>電腦軟體與硬體簡介</h1>
-<p>Type of Computer：</p>
-<p>super computer 超級電腦</p>
-<p>MainFrane 伺服器主機</p>
-<p>Server 伺服器</p>
-<p>PC 個人電腦</p>
-<p>Microcontroler 微電腦</p>
-<p>Mobile Phone 手機</p>
-<table border="0" cellpadding="5" cellspacing="0" width="99%">
-<tbody>
-<tr>
-<td class="FONT18_棕色底table" width="120">硬體名稱</td>
-<td class="FONT18_棕色底table" width="391">說明</td>
-<td class="FONT18_棕色底table" width="378">比喻</td>
-</tr>
-<tr>
-<td class="THIN_Border" valign="top"><a href="http://www.digitaler.net/CLASS360/intro/04/04.html#2A" onclick="MM_openBrWindow('images/cpu.jpg','','width=450,height=370')">CPU</a></td>
-<td class="THIN_Border" valign="top">中央處理器，電腦的心臟，速度越快效率越好。新一代的電腦甚至可以有多核心（兩個以上的CPU）。</td>
-<td class="THIN_Border" valign="top">如果將主機比喻為一家商店，那CPU可以說是店員，動作越快、反應越靈巧的店員可以增加銷售的速度。</td>
-</tr>
-<tr>
-<td class="THIN_Border" valign="top"><a href="http://www.digitaler.net/CLASS360/intro/04/04.html#2A" onclick="MM_openBrWindow('images/ram.jpg','','width=420,height=280')">記憶體RAM</a></td>
-<td class="THIN_Border" valign="top">電腦系統運作時暫時儲存資料的地方，其大小也是影響電腦速率快慢的重要因素，建議入門最起碼可以使用2G。因為記憶體大小很重要、而且價格不貴、又不容易損壞，因此「寧可過剩、不要不足」。</td>
-<td class="THIN_Border" valign="top">猶如商店的賣場面積，賣場越大可以擺的東西越多，客人需要即可直接銷售，而不必進入貨倉中翻箱倒櫃，浪費時間、拖垮效率。</td>
-</tr>
-<tr>
-<td class="THIN_Border" valign="top"><a href="http://www.digitaler.net/CLASS360/intro/04/04.html#2A" onclick="MM_openBrWindow('images/Harddisk_1.jpg','','width=720,height=570')">硬碟</a></td>
-<td class="THIN_Border" valign="top">儲存系統軟體、應用軟體以及資料的儲存空間，目前一般大小約為數百G，一台主機可以裝多顆硬碟。</td>
-<td class="THIN_Border" valign="top">猶如貨倉的大小，貨倉越大當然可以囤積的商品越多。</td>
-</tr>
-<tr>
-<td class="THIN_Border" onfocus="MM_openBrWindow('images/DVD.jpg','','width=420,height=420')" valign="top"><a href="http://www.digitaler.net/CLASS360/intro/04/04.html#2A" onclick="MM_openBrWindow('images/dvd.jpg','','width=720,height=410')">光碟機、<br/>燒錄機</a></td>
-<td class="THIN_Border" valign="top">光碟機：只能讀取CD、DVD（含音樂、影片及資料），古董機。<br/>燒錄機：本身已經具備讀取功能，並且能夠將各類檔案燒錄於光碟片上，並製作為音樂CD、影片DVD、或純粹備份資料片等，為目前的主流規格。</td>
-<td class="THIN_Border" valign="top"> </td>
-</tr>
-<tr>
-<td class="THIN_Border" valign="top"><a href="http://www.digitaler.net/CLASS360/intro/04/04.html#2A" onclick="MM_openBrWindow('images/62-in-1-card-reader.jpg','','width=490,height=310')">讀卡機</a></td>
-<td class="THIN_Border" valign="top">擁有不同的插槽、能夠讀取多種格式的記憶卡。</td>
-<td class="THIN_Border" valign="top"> </td>
-</tr>
-</tbody>
-</table>
-<br/>w9 &lt;&lt;<span> </span><a href="https://50833129.github.io/wcmj2020/content/w9.html">Previous</a><span> </span><a href="https://50833129.github.io/wcmj2020/content/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94%20(Freeware).html">Next</a><span> </span>&gt;&gt; 免費軟體 (Freeware)</div>
-<div class="container">
-<div class="row pt-3 mx-auto">
-<p>Copyright ©2020 All rights reserved | This template is made with<span> </span><i aria-hidden="true" class="icon-heart"></i><span> </span>by<span> </span><a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
-<div id="tipue_search_content">綠色軟體 (Greenware) &lt;&lt;<span> </span><a href="https://50833129.github.io/wcmj2020/content/%E7%B6%A0%E8%89%B2%E8%BB%9F%E9%AB%94%20(Greenware).html">Previous</a><span> </span><a href="https://50833129.github.io/wcmj2020/content/W10.html">Next</a><span> </span>&gt;&gt; W10<br/>
-<h1>網路架構與設定簡介</h1>
-<p>第一個步驟:cd tmp</p>
-<p>再來 cd wcmj2020</p>
-<p>第三部:cd cmsimde</p>
-<p>第四部:python wsgi.py</p>
-<p>架構:<span>網路架構模型分為4層，也就是經常聽到的DoD（Department of Defense）或是TCP/IP模型，如附圖所示，最上層為應用層（Application  Layer），接下來依據為傳輸層（Transport Layer）、網路層（Internet Layer）、鏈結層（Link Layer）。這4層分工需要相互合作，卻又彼此獨立，好比寄信一般，需要郵局處理郵件，道路和交通工具負責運送，信才可送達目的地，但是你卻不用管郵局如何經營、交通工具如何設計、道路怎麼鋪設才會平坦又耐用。</span><span>將網路架構分層出來，便加入了許多可能性，只要符合這個網路模型，各層如何處理資訊的方式就各自獨立，不受其它外在條件的限制。舉個小小例子，筆電能夠透過有線和無線方式連上網路，但是這2種傳輸介質所看到的網頁有所差異嗎？應該不會發生有線介面看到Dream Girls，換成無線介面就變閃亮三姊妹這種情形。同時，分層模型所具備的向後相容性也可以在無線傳輸規格上看到，從現今的802.11 a/b/g/n，到未來的802.11 ac/ad，均能夠傳送網頁資料，讀者應該也沒有聽過換個傳輸規格，網頁就要重寫這種荒唐事。</span></p>
-<br/>綠色軟體 (Greenware) &lt;&lt;<span> </span><a href="https://50833129.github.io/wcmj2020/content/%E7%B6%A0%E8%89%B2%E8%BB%9F%E9%AB%94%20(Greenware).html">Previous</a><span> </span><a href="https://50833129.github.io/wcmj2020/content/W10.html">Next</a><span> </span>&gt;&gt; W10</div>
-<div class="container">
-<div class="row pt-3 mx-auto">
-<p>Copyright ©2020 All rights reserved | This template is made with<span> </span><i aria-hidden="true" class="icon-heart"></i><span> </span>by<span> </span><a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
-</div>
-</div>
-<p></p>
-</div>
-</div>
-<h2> W10(5.8)</h2>
-<p></p>
-<div id="tipue_search_content">
-<p><span>SSH===安全編碼機制</span></p>
-<p><span>Public key 公開密鑰加密器</span></p>
-<p><span>Cryptography 編碼學</span></p>
-<p><span>Putty:EREE SSH FOR WINDOW</span></p>
-<p><span>設置:移動滑鼠</span></p>
-<p>ssh-keygen -t rsa -b 4096 -C "50833129"</p>
-<p>pwd:print working directory</p>
-<br/>網路架構與設定簡介 &lt;&lt;<span> </span><a href="https://50833129.github.io/wcmj2020/content/%E7%B6%B2%E8%B7%AF%E6%9E%B6%E6%A7%8B%E8%88%87%E8%A8%AD%E5%AE%9A%E7%B0%A1%E4%BB%8B.html">Previous</a><span> </span><a href="https://50833129.github.io/wcmj2020/content/w12-13.html">Next</a><span> </span>&gt;&gt; w12-13</div>
-<div class="container">
-<div class="row pt-3 mx-auto">
-<h1>W12-W13</h1>
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>50833134 網管</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">50833134 網管</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='網管.html'>網管</a><ul class='dropdown'><li><a href='W2(3.13).html'>W2(3.13)</a><li><a href='W3(3.20).html'>W3(3.20)</a><li><a href='W4(3.27).html'>W4(3.27)</a><li><a href='W5(4.3).html'>W5(4.3)</a><li><a href='W6(4.10).html'>W6(4.10)</a><li><a href='W7(4.17).html'>W7(4.17)</a><li><a href='W8(4.24).html'>W8(4.24)</a><li><a href='W9(5.1).html'>W9(5.1)</a></li></ul><li><a href='電腦軟體與硬體簡介.html'>電腦軟體與硬體簡介</a><li class='has-children'><a href='網路架構與設定簡介.html'>網路架構與設定簡介</a><ul class='dropdown'><li><a href='W10(5.8).html'>W10(5.8)</a></li></ul><li><a href='W12-W13.html'>W12-W13</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">W10(5.8) << <a href='W10(5.8).html'>Previous</a> <br /><h1>W12-W13</h1>
 <h4>W12</h4>
 <p><a href="https://drive.google.com/open?id=1d_YpSrTdKLPKZjkHW2TNsbHRU1ePNRFl">Leo Editor 與 Pelican blog 使用說明影片</a></p>
 <h4>W13</h4>
@@ -522,4 +554,46 @@
 <p></p>
 </div>
 </div>
-<div></div>
+<div></div><br />W10(5.8) << <a href='W10(5.8).html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
